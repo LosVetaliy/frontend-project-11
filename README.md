@@ -3,4 +3,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/23abbb7889f851d862ca/maintainability)](https://codeclimate.com/github/LosVetaliy/frontend-project-11/maintainability)
 
-### The link to the site [press](frontend-project-11-eietnwm0u-losvetaliy.vercel.app).
+### The link to the site [press](https://frontend-project-11-ecru.vercel.app).
