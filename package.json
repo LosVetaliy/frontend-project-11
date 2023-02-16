@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/LosVetaliy/frontend-project-11/workflows/hexlet-check/badge.svg)](https://github.com/LosVetaliy/frontend-project-11/actions)",
   "main": "./src/index.js",
   "scripts": {
@@ -33,6 +34,9 @@
     "workbox-webpack-plugin": "^6.5.4"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "on-change": "^4.0.2",
+    "onchange": "^7.1.0",
+    "yup": "^1.0.0"
   }
 }
