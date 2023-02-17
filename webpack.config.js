@@ -4,37 +4,10 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import WorkboxWebpackPlugin from 'workbox-webpack-plugin';
 
-const isProduction = process.env.NODE_ENV === 'production';
-
-const config = {
-  entry: '/src/index.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-  },
-  devServer: {
-    open: true,
-    host: 'localhost',
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'index.html',
-    }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-  ],
+export default {
+  mode: process.env.NODE_ENV || 'development',
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
       { test: /\.css$/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
       {
         test: /\.scss$/,
@@ -50,15 +23,12 @@ const config = {
       },
     ],
   },
-};
-
-module.exports = () => {
-  if (isProduction) {
-    config.mode = 'production';
-
-    config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
-  } else {
-    config.mode = 'development';
-  }
-  return config;
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+    }),
+  ],
+  output: {
+    clean: true,
+  },
 };
