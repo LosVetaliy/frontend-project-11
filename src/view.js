@@ -1,7 +1,6 @@
 import onChange from 'on-change';
 
 export default (state, elements) => onChange(state, (path, value) => {
-  console.log(value);
   const {
     form,
     input,

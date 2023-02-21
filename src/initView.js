@@ -1,9 +1,7 @@
 import { object, string } from 'yup';
 
 export default (watchedState, elements) => {
-  const {
-    rssForm, feeds, posts,
-  } = watchedState;
+  const { rssForm, feeds, posts } = watchedState;
   const {
     form,
     input,
