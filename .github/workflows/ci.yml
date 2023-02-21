@@ -26,9 +26,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: make install
-      - run: make build
-      - run: make lint
+      - run: npm ci
+      - run: NODE_ENV=production npx webpack
+      - run: npx eslint .
 
       - name: Test & publish code coverage
         # Publish code coverage on Code Climate
