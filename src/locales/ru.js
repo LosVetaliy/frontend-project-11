@@ -5,7 +5,7 @@ export default {
         notUrl: 'Ссылка должна быть валидным URL',
         notRss: 'Ресурс не содержит валидный RSS',
         isValid: 'RSS успешно загружены',
-        includYet: 'RSS уже существует',
+        includeYet: 'RSS уже существует',
       },
     },
   },

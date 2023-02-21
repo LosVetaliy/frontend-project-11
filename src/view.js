@@ -1,11 +1,7 @@
 import onChange from 'on-change';
 
 export default (state, elements) => onChange(state, (path, value) => {
-  const {
-    form,
-    input,
-    feedbackElement,
-  } = elements;
+  const { form, input, feedbackElement } = elements;
 
   if (path === 'rssForm.state') {
     input.classList.remove('is-invalid');
