@@ -1,7 +1,6 @@
 import 'bootstrap';
-import init from './init.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.scss';
+import init from './init.js';
 
-console.log('Hello World!');
 init();
