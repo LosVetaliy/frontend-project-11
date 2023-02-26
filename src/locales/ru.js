@@ -5,7 +5,15 @@ export default {
         notUrl: 'Ссылка должна быть валидным URL',
         notRss: 'Ресурс не содержит валидный RSS',
         isValid: 'RSS успешно загружены',
-        includeYet: 'RSS уже существует',
+        includYet: 'RSS уже существует',
+        netWorkError: 'Ошибка сети',
+      },
+      posts: {
+        header: 'Посты',
+        buttonShow: 'Просмотр',
+      },
+      feeds: {
+        header: 'Фиды',
       },
     },
   },
